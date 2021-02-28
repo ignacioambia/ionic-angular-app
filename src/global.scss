@@ -24,3 +24,89 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+@import 'theme/variables.scss';
+
+.subheader{
+    color: $secondary-gray;
+    font-family : 'Avenir Book';
+}
+
+
+.primary-yellow-txt{
+    color : $primary-yellow!important;
+}
+
+.primary-blue-txt{
+    color : $primary-blue;
+}
+
+.primary-green-txt{
+    color : $primary-green;
+}
+
+.primary-red-txt{
+    color : $primary-red;
+}
+
+.secondary-gray-txt{
+    color : $secondary-gray;
+}
+
+.d-flex{
+    display: flex;
+}
+
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.card{
+    background-color: $black-card;
+    border-radius: 8px;
+    padding : 10px;
+    min-width: 170px;
+    box-shadow: inset -2px -2px 4px 0 $solid-black, inset 2px 2px 4px 0 $secondary-black, 0 13px 9px 0 black;
+
+}
+
+.sections>div {
+
+        margin-bottom: $app-padding;
+}
+
+
+@for $i from 1 through 10 {
+    .mt-#{$i} {
+        margin-top: #{$i}rem;
+    }
+}
+
+@for $i from 1 through 10 {
+    .mb-#{$i} {
+        margin-bottom: #{$i}rem;
+    }
+}
+
+@for $i from 1 through 10 {
+    .ma-#{$i} {
+        margin: #{$i}rem;
+    }
+}
+
+@for $i from 6 through 24 {
+    .font-size-#{$i}{
+        font-size: #{$i}px;
+    }
+}
+

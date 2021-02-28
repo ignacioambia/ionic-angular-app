@@ -1,3 +1,5 @@
+@import 'src/theme/variables.scss';
+
 #container {
   text-align: center;
 
@@ -6,6 +8,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  background-color: $solid-black;
 }
 
 #container strong {
