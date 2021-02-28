@@ -28,6 +28,23 @@
 
 @import 'theme/variables.scss';
 
+// html{
+//     font-family: "Avenir Heavy", Avenir, Helvetica, Arial, sans-serif;
+// }
+
+
+@font-face {
+    font-family: "Avenir Heavy";
+    src : url('/assets/fonts/avenir_heavy.ttf') format("truetype");
+  }
+  
+@font-face {
+    font-family: "Avenir Book";
+    src : url('/assets/fonts/avenir_book.ttf') format("truetype");
+}
+
+
+
 .subheader{
     color: $secondary-gray;
     font-family : 'Avenir Book';
