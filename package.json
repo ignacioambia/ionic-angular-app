@@ -1,5 +1,5 @@
 {
-  "name": "firstApp",
+  "name": "ionic-angular-app",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -24,6 +24,7 @@
     "@mdi/font": "^5.9.55",
     "chart.js": "^2.9.4",
     "cordova-android": "9.0.0",
+    "express": "^4.17.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
