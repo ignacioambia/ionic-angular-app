@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "~11.2.0",
     "@angular/router": "~11.2.0",
     "@ionic/angular": "^5.5.2",
+    "@ionic/cli": "^6.13.1",
     "@mdi/font": "^5.9.55",
     "chart.js": "^2.9.4",
     "cordova-android": "9.0.0",
