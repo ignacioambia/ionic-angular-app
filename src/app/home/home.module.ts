@@ -11,6 +11,10 @@ import { HeaderComponent } from '../header/header.component'
 import { CustomButtonComponent } from '../custom-button/custom-button.component'
 import { CustomTabComponent } from '../custom-tab/custom-tab.component'
 import { CustomTabsComponent} from '../custom-tabs/custom-tabs.component'
+import { AllTasksComponent} from '../all-tasks/all-tasks.component'
+import { StatisticsDownloadBtnComponent} from '../statistics-download-btn/statistics-download-btn.component'
+import { CustomProgressBarComponent } from '../custom-progress-bar/custom-progress-bar.component'
+import { OrderProgressComponent } from '../order-progress/order-progress.component'
 
 
 @NgModule({
@@ -25,7 +29,11 @@ import { CustomTabsComponent} from '../custom-tabs/custom-tabs.component'
     HeaderComponent,
     CustomButtonComponent,
     CustomTabComponent,
-    CustomTabsComponent
+    CustomTabsComponent,
+    AllTasksComponent,
+    StatisticsDownloadBtnComponent,
+    CustomProgressBarComponent,
+    OrderProgressComponent
   ]
 })
 export class HomePageModule {}

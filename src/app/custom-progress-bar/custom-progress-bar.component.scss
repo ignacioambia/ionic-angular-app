@@ -1,0 +1,26 @@
+@import 'src/theme/variables.scss';
+
+
+.custom-progress-bar{
+    color : $secondary-gray;
+
+    .progress-legend{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .bar{
+        background-color: #494C50;
+        min-height: 1px;
+        position: relative;
+        margin-bottom: 3px;
+
+        .progress{
+            position: absolute;
+            min-height: 100%;
+            background-color: $primary-yellow ;
+        }
+    }
+
+}

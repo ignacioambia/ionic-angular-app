@@ -1,0 +1,12 @@
+<div class="order-progress">
+  <div class="order-number" style="font-family: 'Avenir Book';">
+      Order #{{order.id}}
+  </div>
+  <div class="person-in-charge mb-1 subheader">
+      {{order.inCharge}}
+  </div>
+  <custom-progress-bar [progress]="order.progress"></custom-progress-bar>
+  <div  class="d-flex justify-content-end font-size-10 secondary-gray-txt subheader">
+      1 day left
+  </div>
+</div>

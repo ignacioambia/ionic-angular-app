@@ -1,0 +1,36 @@
+<div class="sections">
+  <!-- upcoming tasks section-->
+  <div>
+
+    <div class="d-flex justify-content-between mb-1">
+      <div >
+          Upcoming Tasks 
+          <span class="font-size-14 subheader">{{numUpcomingTasks}}</span>
+      </div>
+      <div>
+          <statistics-download-btn></statistics-download-btn>
+          
+      </div>
+    </div>
+
+    <div class="orders">
+      <order-progress
+        *ngFor="let task of upcomingTasks"
+        [order]="task"
+      >
+        
+      </order-progress>
+    </div>
+
+  </div>
+
+  <!-- statistics section-->
+  <div>
+
+  </div>
+
+  <!-- chart section-->
+  <div>
+
+  </div>
+</div>

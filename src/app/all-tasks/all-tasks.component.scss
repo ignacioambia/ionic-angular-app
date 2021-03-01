@@ -1,0 +1,74 @@
+@import 'src/theme/variables.scss';
+
+
+.upcoming-tasks{
+    font-size: 14px;
+}
+
+.orders{
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-right: -$app-padding;
+    margin-left:  -$app-padding;
+    padding-left: $app-padding;
+}
+
+.statistics-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    & > div{
+        border-top: 1px solid $secondary-black;
+        border-left: 1px solid $secondary-black;
+        padding : 5px;
+
+        &:nth-child(-n+2) {
+            border-top: none;
+        }
+        &:nth-child(odd) {
+            border-left: none;
+        }
+
+    }
+
+    .subheader{
+        font-size: 14px;
+        color : $secondary-gray;
+    }
+
+
+
+}
+
+
+.chart-card {
+    box-sizing: border-box;
+    min-height: 355px;
+    border: 1px solid $black-card;
+    border-radius: 16px;
+    background-color: $black-card;
+    box-shadow: inset 2px 2px 6px 0 $secondary-black, inset -2px -2px 6px 0 #040B11;
+
+    .expenses-grouping-options{
+        display: flex;
+        justify-content: center;
+        div{
+            margin : 18px;
+        }
+    }
+
+    .total-expenses{
+        font-size: 45px;
+        text-align: center;
+
+        span{
+            vertical-align : middle;
+        }
+    }
+
+
+
+}
+
