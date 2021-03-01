@@ -26,6 +26,32 @@
 
   <!-- statistics section-->
   <div>
+    <div>
+      Statistics
+  </div>
+
+  <div class="card statistics-card">
+      <div *ngFor="let statistic of statistics">
+          <div class="d-flex align-items-center ">
+
+              <div [class]="statistic.iconClass">
+                <span [class]="statistic.icon"></span>
+              </div>
+
+              <div>
+                  <div class="header">
+                      {{statistic.value}}
+                  </div>
+
+                  <div class="subheader">
+                      {{statistic.key}}
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+
+  </div>
 
   </div>
 
