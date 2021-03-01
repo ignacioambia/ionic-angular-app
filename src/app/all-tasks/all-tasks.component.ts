@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Order} from 'src/app/order'
-import { Statistic } from 'src/app/statistic'
+import { Order} from 'src/app/order';
+import { Statistic } from 'src/app/statistic';
+import Chart from 'chart.js';
 
 @Component({
   selector: 'app-all-tasks',
@@ -71,8 +72,52 @@ export class AllTasksComponent implements OnInit {
     },
 ];
 
+  expenses = {
+    'Day' : '1,255' ,
+    'Week' : '5,281',
+    'Month' : '13,543',
+    'Year' : '125,789'
+  }
+
+
+  get expensesGroupingOptions(){
+    return Object.keys(this.expenses);
+  }
+
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    let ctx = document.getElementById('tasksChart')
 
+    new Chart(ctx,{
+      type : 'line',
+      data : {
+          labels: ['Jun','Jul','Aug','Sep','Oct','Nov'],
+          datasets: [
+            {
+              data: [5000,2000,5500,4000,12000,8500],
+              borderColor : '#FFD200',
+              backgroundColor : 'rgba(255, 210, 0, 0.1)'
+            }
+          ]
+      },
+
+      options : {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend : {
+            display : false
+        },
+        scales : {
+            yAxes : [{
+                ticks : {
+                    display : false
+                }
+            }]
+        }
+    }
+
+
+    });
+  }
 }

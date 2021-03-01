@@ -56,7 +56,20 @@
   </div>
 
   <!-- chart section-->
-  <div>
+  <div class="chart-card">
+    <div class="expenses-grouping-options">
+      <custom-tabs [tabs]="expensesGroupingOptions"></custom-tabs>
+    </div>
 
+  <div class="total-expenses mt-1" >
+      <span class="font-size-22" >$</span>
+      <span>13,450</span>
+      
   </div>
+
+  
+
+  <canvas id="tasksChart"></canvas>
+    </div>
+  
 </div>

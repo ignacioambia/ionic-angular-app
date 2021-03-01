@@ -12,7 +12,6 @@ export class CustomTabsComponent implements OnInit {
 
 
   setActiveTab(tab){
-    console.log('Set Active tab',tab);
     this.activeTab = tab;
   }
 
