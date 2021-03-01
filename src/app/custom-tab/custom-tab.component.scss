@@ -1,0 +1,13 @@
+@import 'src/theme/variables.scss';
+
+
+.custom-tab{
+
+    cursor : pointer;
+    font-size: 14px;
+
+    &.active{
+        color : $primary-yellow;
+        border-bottom: 1px solid;
+    }
+}

@@ -1,6 +1,17 @@
 
 
-<ion-content [fullscreen]="true">
-    <app-header></app-header>
-    hola mundo
+<ion-content [fullscreen]="true" >
+    <div>
+        <app-header></app-header>
+
+        <div class="d-flex justify-content-end mt-2">
+            <app-custom-button>
+                Create
+                <span class="mdi mdi-plus"></span>
+            </app-custom-button>
+          </div>
+
+          <custom-tabs [tabs]="tasksTabs"></custom-tabs>
+
+    </div>
 </ion-content>

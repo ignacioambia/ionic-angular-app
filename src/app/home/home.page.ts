@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  tasksTabs : string[] = ['All','In Progress','Started','Completed'];
+
   constructor() {}
 
 }

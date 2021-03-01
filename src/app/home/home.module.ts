@@ -8,6 +8,9 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 
 import { HeaderComponent } from '../header/header.component'
+import { CustomButtonComponent } from '../custom-button/custom-button.component'
+import { CustomTabComponent } from '../custom-tab/custom-tab.component'
+import { CustomTabsComponent} from '../custom-tabs/custom-tabs.component'
 
 
 @NgModule({
@@ -17,6 +20,12 @@ import { HeaderComponent } from '../header/header.component'
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, HeaderComponent]
+  declarations: [
+    HomePage, 
+    HeaderComponent,
+    CustomButtonComponent,
+    CustomTabComponent,
+    CustomTabsComponent
+  ]
 })
 export class HomePageModule {}

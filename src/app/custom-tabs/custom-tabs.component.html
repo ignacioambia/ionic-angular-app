@@ -1,0 +1,9 @@
+  <!-- tabs in task section -->
+  <div class="d-flex justify-content-between mt-2 mb-2">
+    <custom-tab
+      (click) ="setActiveTab(tab)"  
+      *ngFor="let tab of tabs" 
+      [active] =" tab == activeTab ">
+        {{ tab }}
+    </custom-tab>
+  </div>

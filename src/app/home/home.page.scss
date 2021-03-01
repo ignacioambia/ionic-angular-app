@@ -6,6 +6,10 @@
 
 ion-content{
   font-family: "Avenir Heavy", Avenir, Helvetica, Arial, sans-serif;
-  background-color: --ion-;
+
+  & > div{
+
+    padding : 76px $app-padding;
+  }
 }
 
